@@ -1,3 +1,16 @@
 #page-header h1 {
-	text-align: center;
+    text-align: center;
+    margin-bottom:140px;
+}
+#login .input-group label {
+    width: 100px;
+    display:inline-block;
+    text-align:center;
+}
+#login .input-group input {
+    height:25px;
+}
+#login .input-group {
+    text-align:center;
+    margin-bottom:10px;
 }
