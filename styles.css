@@ -14,3 +14,15 @@
     text-align:center;
     margin-bottom:10px;
 }
+
+#chatroom {
+    display:none;
+}
+
+#page-frame.chat-mode #login {
+    display: none;
+}
+
+#page-frame.chat-mode #chatroom {
+    display:block;
+}
