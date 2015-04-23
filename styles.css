@@ -41,7 +41,7 @@ body {
     position:absolute;
     width:100%;
     bottom:32px;
-    top:62px;
+    top:67px;
     overflow:auto;
 }
 .chat-room-messages .message .inner-message {

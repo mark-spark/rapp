@@ -4,6 +4,7 @@ var Rapp = {
 
 function pageSetup() {
     setupLogin();
+    setupChatRoom();
 }
 
 function setupLogin() {
@@ -40,6 +41,30 @@ function initializeChat(){
     $("#page-frame").addClass("chat-mode");    
 }
 
+function setupChatRoom(){
+    var chatInput;
+    chatInput = $(".textarea-wrapper textarea");
+    chatInput.keydown(kewDownOnChatInput)
+} 
+    
+function kewDownOnChatInput(event){
+    if(event.keyCode == Rapp.KEY_CODES.ENTER){
+        event.preventDefault();
+        submitNewMsg();
+    }        
+}
+
+function submitNewMsg(){
+    // create variable for message text
+    // make sure message text is valid
+    // add message to page
+    var msgtxt;
+    
+    msgtxt = $("textarea").val();
+    alert(msgtxt)
+}
+
+
 $(document).ready(pageSetup);
 
 /*
@@ -61,12 +86,3 @@ var juan = multiply(58936,395824);
 alert(twelve);
 alert(juan);
 */
-
-
-
-
-
-
-
-
-
